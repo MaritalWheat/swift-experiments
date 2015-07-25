@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     let factBook = Factbook()
     let colorWheel = ColorWheel()
+    var prevColor = UIColor.whiteColor()
+    var prevFact = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +30,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showFunFact() {
+        
         var randomColor = colorWheel.randomColor()
+        while(randomColor == prevColor) {
+            randomColor = colorWheel.randomColor()
+        }
+        
+        var randomFact = factBook.randomFact()
+        while(randomFact == prevFact) {
+            randomFact = factBook.randomFact()
+        }
+        
         view.backgroundColor = randomColor
         funFactButton.tintColor = randomColor
-        funFactLabel.text = factBook.randomFact()
+        funFactLabel.text = randomFact
+        
+        prevColor = randomColor
+        prevFact = randomFact
     }
 
 }
