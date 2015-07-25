@@ -10,7 +10,12 @@ import UIKit
 
 class PlaylistDetailViewController: UIViewController {
     
-    @IBOutlet weak var buttonPressLabel: UILabel!
+    @IBOutlet weak var playlistCoverImage: UIImageView!
+    @IBOutlet weak var playlistTitle: UILabel!
+    @IBOutlet weak var playlistDescription: UILabel!
+    @IBOutlet weak var playlistArtistZero: UILabel!
+    @IBOutlet weak var playlistArtistOne: UILabel!
+    @IBOutlet weak var playlistArtistTwo: UILabel!
     
     var playlist: Playlist?
     
@@ -18,24 +23,18 @@ class PlaylistDetailViewController: UIViewController {
         super.viewDidLoad()
         
         if (playlist != nil) {
-            buttonPressLabel.text = playlist!.title
+            playlistCoverImage.image = playlist!.largeIcon
+            playlistCoverImage.backgroundColor = playlist!.backgroundColor
+            playlistTitle.text = playlist!.title
+            playlistDescription.text = playlist!.description
+            playlistArtistZero.text = playlist!.artists[0]
+            playlistArtistOne.text = playlist!.artists[1]
+            playlistArtistTwo.text = playlist!.artists[2]
         }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
