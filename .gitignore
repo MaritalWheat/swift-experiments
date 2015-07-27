@@ -35,4 +35,5 @@ Carthage/Build
 #Tests & Playgrounds
 FunFactsTests/
 AlgorhythmTests/
+StormyTests/
 *.playground
