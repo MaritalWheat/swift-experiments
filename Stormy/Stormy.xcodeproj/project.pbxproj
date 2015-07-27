@@ -13,6 +13,8 @@
 		1CD145731B65BE9200C13DCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD145721B65BE9200C13DCC /* Images.xcassets */; };
 		1CD145761B65BE9200C13DCC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD145741B65BE9200C13DCC /* LaunchScreen.xib */; };
 		1CD145821B65BE9300C13DCC /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD145811B65BE9300C13DCC /* StormyTests.swift */; };
+		1CD1458E1B65BFEA00C13DCC /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CD1458D1B65BFEA00C13DCC /* CurrentWeather.plist */; };
+		1CD145901B65C04B00C13DCC /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1458F1B65C04B00C13DCC /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		1CD1457B1B65BE9300C13DCC /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD145801B65BE9300C13DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD145811B65BE9300C13DCC /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
+		1CD1458D1B65BFEA00C13DCC /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		1CD1458F1B65C04B00C13DCC /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				1CD1456B1B65BE9200C13DCC /* AppDelegate.swift */,
 				1CD1456D1B65BE9200C13DCC /* ViewController.swift */,
+				1CD1458F1B65C04B00C13DCC /* CurrentWeather.swift */,
 				1CD1456F1B65BE9200C13DCC /* Main.storyboard */,
 				1CD145721B65BE9200C13DCC /* Images.xcassets */,
 				1CD145741B65BE9200C13DCC /* LaunchScreen.xib */,
@@ -90,6 +95,7 @@
 		1CD145691B65BE9200C13DCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1CD1458D1B65BFEA00C13DCC /* CurrentWeather.plist */,
 				1CD1456A1B65BE9200C13DCC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CD145711B65BE9200C13DCC /* Main.storyboard in Resources */,
+				1CD1458E1B65BFEA00C13DCC /* CurrentWeather.plist in Resources */,
 				1CD145761B65BE9200C13DCC /* LaunchScreen.xib in Resources */,
 				1CD145731B65BE9200C13DCC /* Images.xcassets in Resources */,
 			);
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CD1456E1B65BE9200C13DCC /* ViewController.swift in Sources */,
+				1CD145901B65C04B00C13DCC /* CurrentWeather.swift in Sources */,
 				1CD1456C1B65BE9200C13DCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
